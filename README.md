@@ -2,18 +2,18 @@
 
 A pipeline written using bash scripting to implement SNP (Single Nucleotide Polymorphism) Calling. The pipeline maps genomic reads to a reference genome and calls SNPs from the mapping.
 
-Tools used:
+**Tools used:**
 - bwa (for performing the alignment)
 - samtools (processing the alignment file and variant calling)
 - GATK v3.7.0 (Alignment improvement)
 
-It follows the following steps:
+**It follows the following steps:**
 
 - alignment of FASTQ reads to a reference genome to create an alignment file (using bwa)
 - processing the alignment file: file format conversion, sorting, alignment improvement
 - variant calling
 
-Command-line arguments to execute the bash script:
+**Command-line arguments to execute the bash script:**
 - -a: Input reads file -pair1
 - -b: Input reads file -pair2
 - -r: Reference genome file
